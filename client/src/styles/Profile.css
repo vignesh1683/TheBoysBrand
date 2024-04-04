@@ -1,0 +1,63 @@
+.pcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pform {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    background-color: whitesmoke;
+}
+.pform > * {
+    margin-bottom: 15px;
+}
+
+.pform p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Style for the form inputs */
+.pform input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.pform input:hover{
+    border-color: red;
+    color: red;
+}
+.save {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.save:hover {
+    border-color: red;
+    color: red;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 420px) {
+    .pform {
+        width: 300px; /* Change to column layout on smaller screens */
+    }
+    .pform input{
+        width: 90%;
+    }
+}

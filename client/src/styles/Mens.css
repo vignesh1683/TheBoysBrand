@@ -1,0 +1,145 @@
+.name{
+    margin-left: 20px;
+}
+
+.main{
+    display: flex;
+}
+
+.product-card>div>div>h3{
+    color:red;
+    display: flex;
+    margin-left: 10px;
+}
+
+.underscore1 {
+    width: 30px;
+    height: 2px;
+    background-color: #ff0000; 
+    margin-left: 10px;
+}
+
+.content1{
+    width: 342px !important;
+    height: 421px !important;
+    position: relative;
+}
+
+.content1 .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 8%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+  
+.content1:hover .content-overlay {
+    opacity: 1;
+}
+  
+.content1-image {
+    width: 100%;
+}
+
+.m1{
+    width: 342px !important;
+    height: 421px !important;
+}
+
+.pic1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic1 > div {
+    margin: 30px !important;
+    width: 342px !important;
+    height: 462px !important;
+}
+
+.sort{
+    width: 211px;
+    height: 40px;
+}
+
+.pic-contain{
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chead{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chead>h5{
+    color: red;
+}
+
+input[type="range"] {
+    accent-color: red;
+}
+
+.catogries{
+    position: relative;
+}
+
+input[type="checkbox"] {
+    accent-color: red; 
+}
+
+.catogires>p{
+    font-weight: bold;
+}
+.catogires>h4{
+    color: red;
+}
+.categry{
+    width: 20%;
+}
+.navbar-button1{
+    color: red !important;
+    text-decoration: none !important;
+    margin-right: 10px;
+}
+.sada{
+    font-weight: bold;
+    color: #ff0000;
+}
+.footer{
+    margin-top: 30px;
+}
+
+@media (max-width:425px) {
+    .product-card{
+        width: 80%;
+    }
+    input[type="range"] {
+        width: 80px;
+    }
+    input[type="number"] {
+        width: 80px;
+    }
+    .m1{
+        width: 300px  !important;
+        height: auto !important;
+    }
+    .content1{
+        width: 300px !important;
+        height: 380px !important;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .categry{
+        margin-left: 30px !important;
+        width: 100%!important;
+    }
+}
